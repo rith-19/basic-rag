@@ -12,11 +12,11 @@ from langchain_core.output_parsers import StrOutputParser
 import redis
 
 # Load API key from environment variable
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "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")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 LLM_MODEL = "llama-3.3-70b-versatile"
-REDIS_URL = "redis://localhost:6379/0"
+REDIS_URL = "YOUR_REDIS_URL"
 SOURCE_URL = "https://lilianweng.github.io/posts/2023-06-23-agent/"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
