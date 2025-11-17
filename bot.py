@@ -43,7 +43,7 @@ def setup_rag_chatbot():
     
     retriever = vs.as_retriever(search_kwargs={"k": RETRIEVER_K})
     
-    llm = ChatGroq(model=LLM_MODEL, temperature=0.7)
+    llm = ChatGroq(model=LLM_MODEL, temperature=0.6)
     
     return retriever, llm
 
